@@ -1,23 +1,26 @@
 const modalTitle = document.getElementById('modalTitle')
 const modalText = document.getElementById('modalText')
 
-const modalShow = () => {
-    $('#modalDescription').modal('show')
+const openModal = (id) => {
+    $(id).modal('show')
 }
 
 
-function info(id) {
-    modalShow()
+const info = (id) => {
+    openModal('#modalDescription')
 
     if (id === 'htmlImg') {
         modalTitle.innerHTML = 'HTML'
         modalText.innerHTML = 'Como muitos iniciantes no mundo de Desenvolvimento Web, tive o meu primeiro contato com a tecnologia HTML. Uma linguagem de marcação a qual me chamou muita atenção para trilhar esse caminho que a Web me proporciona. Sou capaz de criar páginas acessíveis e ricas em detalhes.'
-    } else if (id === 'cssImg') {
+    }  else if (id === 'cssImg') {
         modalTitle.innerHTML = 'CSS'
         modalText.innerHTML = 'Utilizar o Css para criar páginas muito atraentes parece ser algo muito complexo no início, porém, utilizando a tecnologia Css, posso fazer páginas responsivas e com muitos efeitos/animações bem atraentes para uma melhor experiência do usuário.'
     } else if (id === 'jsImg') {
         modalTitle.innerHTML = 'JAVASCRIPT'
         modalText.innerHTML = 'Para criar um site dinâmico passando toda uma lógica por trás, o Javascript tem sido o carro chefe. Sou capaz de implementar lógicas a nível iniciante, utilizando todo o básico para intereções com o usuário e lhe proporcionando uma melhor experiência rica em interações.'
+    } else if(id === 'gitImg') {
+        modalTitle.innerHTML = 'GIT'
+        modalText.innerHTML = 'Com certeza a utilização do Git é muito importante quando se trata de várias ideias e projetos, possuo conhecimento a respeito de versionamento de código para trabalhar em equipe.'
     } else if (id === 'bootstrapImg') {
         modalTitle.innerHTML = 'BOOTSTRAP'
         modalText.innerHTML = 'Pensando em agilidade, o Bootstrap pode ser um grande aliado quando queremos soluções mais rápidas. Gosto muito de utiliza-lo em meus projetos para aumentar a produtividade em meus códigos.'
@@ -30,9 +33,8 @@ function info(id) {
     }
 }
 
-
-function showProject(id) {
-    modalShow()
+const showProject = (id) => {
+    openModal('#modalProject')
     if (window.matchMedia('(max-width: 767px)').matches) {
         if (id === 'projectLogin') {
             modalTitle.innerHTML = 'Projeto tela de login'
@@ -78,10 +80,6 @@ function showProject(id) {
     }
 }
 
-// function formSubmissionModal() {
-//     modalShow()
-// }
-
 const formSubmissionModal = () => {
-    $('#formSubmission').modal('show')
+    openModal('#formSubmission')
 }
