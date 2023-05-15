@@ -185,64 +185,11 @@ main {
     }
 }
 
-/* 
-#content_left {
-    flex: 50%;
-    margin-left: 0.1em;
-    margin-right: 0.5em;
-    background-color: #000;
-    animation-name: opacity_animation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    border-radius: 10%;
-
-} */
-
-/* #content_right {
-    flex: 50%;
-    margin-right: 0.1em;
-    margin-left: 0.5em;
-    background-color: #000;
-    animation-name: opacity_animation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    border-radius: 10%;
-    text-align: center;
-} */
-
 #imgProfile {
     margin-top: 1em;
     border-radius: 50%;
     box-shadow: 7px 7px 30px #FF0000;
 }
-
-/* 
-#content_left p {
-    color: #F5FFFA;
-    text-align: center;
-    margin-top: 2em;
-    font-size: 1.5em;
-} */
-
-/* #content_left h1 {
-    text-align: center;
-    font-size: 4em;
-    text-shadow: 10px 10px 30px #F5FFFA;
-    color: #F5FFFA;
-
-}
-
-
-#content_right h1 {
-    text-align: center;
-    font-size: 3em;
-    text-shadow: 5px 5px 20px #F5FFFA;
-    color: #F5FFFA;
-
-} */
-
 
 #contact {
     display: flex;
@@ -250,10 +197,6 @@ main {
     flex-direction: column;
     /* margin-top:  */
 }
-
-/* .ocultProject {
-    display: none;
-} */
 
 .projects {
     height: 100px;
@@ -280,6 +223,10 @@ main {
 
 .form-control {
     font-size: 1em;
+}
+
+.form-control:focus {
+    border: #000;
 }
 
 .modal-header {
