@@ -36,9 +36,9 @@ const info = (id) => {
 const showProject = (id) => {
     openModal('#modalProject')
     if (window.matchMedia('(max-width: 767px)').matches) {
-        if (id === 'projectLogin') {
-            modalTitle.innerHTML = 'Projeto tela de login'
-            modalText.innerHTML = '<img src="img/projetoLogin.png" height="250">'
+        if (id === 'projetoForm') {
+            modalTitle.innerHTML = 'Projeto formulário'
+            modalText.innerHTML = '<img src="img/projetoForm.png" height="250">'
             modalText.style.display = 'flex'
             modalText.style.justifyContent = 'center'
         } 
@@ -57,9 +57,9 @@ const showProject = (id) => {
             modalText.style.justifyContent = 'center'
         } 
     } else if(window.matchMedia('(min-width: 768px)').matches) {
-        if (id === 'projectLogin') {
+        if (id === 'projetoForm') {
             modalTitle.innerHTML = 'Projeto tela de login'
-            modalText.innerHTML = '<img src="img/projetoLogin.png" height="400">'
+            modalText.innerHTML = '<img src="img/projetoForm.png" height="400">'
             modalText.style.display = 'flex'
             modalText.style.justifyContent = 'center'
         } 
