@@ -88,4 +88,5 @@ const formSubmissionModal = () => {
 $('#btnClear').on('click', () => {
     $('#name').val('')
     $('#message-text').val('')
+    $('#subject').val('')
 })
