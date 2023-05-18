@@ -83,3 +83,9 @@ const showProject = (id) => {
 const formSubmissionModal = () => {
     openModal('#formSubmission')
 }
+
+
+$('#btnClear').on('click', () => {
+    $('#name').val('')
+    $('#message-text').val('')
+})
