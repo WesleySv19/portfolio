@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" href="img/programmerIcon.png">
+    <link rel="icon" type="image/png" href="../img/programmerIcon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -32,10 +32,10 @@
             </div>
             <div id="nav-target" class="collapse navbar-collapse">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="projects.html">Projetos</a></li>
-                    <li><a href="#" class="active">Contato</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">Sobre</a></li>
+                    <li><a href="../projects.html">Projetos</a></li>
+                    <li><a href="../" class="active">Contato</a></li>
                 </ul>
             </div>
             <button id="btnTarget" class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
@@ -48,14 +48,13 @@
     <main>
         <div class="contentForm" id="contactForm">
             <div class="contentForm1">
-                <h1><span class="spanColor">{</span>Mensagem Enviada com sucesso!<span class="spanColor">}</span></h1>
+                <h1><span class="spanColor">{</span>Mensagem enviada com sucesso!<span class="spanColor">}</span></h1>
                 <img class="animate__animated animate__zoomInUp" src="../img/verificado.png" height="200">
-                <!-- <p class="text"></p> -->
+                <p class="text">Sua mensagem foi enviada para meu email pessoal.</p>
             </div>
 
         </div>
     </main>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
