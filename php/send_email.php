@@ -19,7 +19,6 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     $mail->Host = 'smtp.gmail.com';
     $mail->IsHTML(true); 
     $mail->Port = 587;
-;
 
 
     $mail->addAddress($email, 'Wesley');
