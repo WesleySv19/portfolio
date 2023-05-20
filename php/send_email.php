@@ -2,7 +2,7 @@
 
     ini_set('SMTP', 'smtp.gmail.com');
     ini_set('smtp_port', 587);
-    ini_set('sendmail_from', 'wesleyysilvaa1912@gmail.com');
+    ini_set('sendmail_from', 'localhost');
 
  if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     // Dados vindos do formulário
