@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="modal-body">
-                        <form action="php/send_email.php" method="POST" autocomplete="off">
+                        <form id="myForm" action="php/send_email.php" method="POST" autocomplete="off">
                             <div class="form-group">
 
                                 <label for="email" class="col-form-label">Destinatário:</label>
@@ -88,7 +88,7 @@
                     <div class="modal-footer">
                         <button id="btnClear" type="button" class="btn btn-primary btn-footer">Limpar campos</button>
                         <button type="button" class="btn btn-danger btn-footer" data-dismiss="modal">Fechar</button>
-                        <button type="submit" class="btn btn-success btn-footer">Enviar</button>
+                        <button id="send" type="submit" class="btn btn-success btn-footer">Enviar</button>
                     </div>
 
                     </form>

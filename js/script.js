@@ -80,6 +80,16 @@ const showProject = (id) => {
     }
 }
 
+$('#formSubmission').on('keypress', (e) => {
+    const inputName = $('#name').val()
+    const inputSubject = $('#subject').val()
+    const inputMsg = $('#msg').val()
+
+    if(e.keyCode === 13 && inputName != '' && inputSubject != '' && inputMsg != '') {
+        document.getElementById('myForm').submit()
+    }
+})
+
 const formSubmissionModal = () => {
     openModal('#formSubmission')
 }
