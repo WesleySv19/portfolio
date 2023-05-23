@@ -38,25 +38,46 @@ const showProject = (id) => {
     if (window.matchMedia('(max-width: 767px)').matches) {
         if (id === 'projetoForm') {
             modalTitle.innerHTML = 'Projeto formulário'
-            modalText.innerHTML = '<img src="img/projetoForm.png" height="250">'
+            modalText.innerHTML = '<img src="img/projetoForm.png" height="200">'
             modalText.style.display = 'flex'
             modalText.style.justifyContent = 'center'
         } 
 
         if (id === 'projectCalculadora') {
             modalTitle.innerHTML = 'Projeto Calculadora'
-            modalText.innerHTML = '<img src="img/projetoCalculadora.png" height="250">'
+            modalText.innerHTML = '<img src="img/projetoCalculadora.png" height="200">'
             modalText.style.display = 'flex'
             modalText.style.justifyContent = 'center'
         }
 
         if (id === 'projectEleicao') {
             modalTitle.innerHTML = 'Projeto Calculadora'
-            modalText.innerHTML = '<img src="img/projetoEleicao.png" height="250">'
+            modalText.innerHTML = '<img src="img/projetoEleicao.png" height="200">'
             modalText.style.display = 'flex'
             modalText.style.justifyContent = 'center'
         } 
-    } else if(window.matchMedia('(min-width: 768px)').matches) {
+    } else if(window.matchMedia('(max-width: 1023px)').matches) {
+        if (id === 'projetoForm') {
+            modalTitle.innerHTML = 'Projeto tela de login'
+            modalText.innerHTML = '<img src="img/projetoForm.png" height="260">'
+            modalText.style.display = 'flex'
+            modalText.style.justifyContent = 'center'
+        } 
+
+        if (id === 'projectCalculadora') {
+            modalTitle.innerHTML = 'Projeto calculadora'
+            modalText.innerHTML = '<img src="img/projetoCalculadora.png" height="260">'
+            modalText.style.display = 'flex'
+            modalText.style.justifyContent = 'center'
+        }
+
+        if (id === 'projectEleicao') {
+            modalTitle.innerHTML = 'Projeto eleição'
+            modalText.innerHTML = '<img src="img/projetoEleicao.png" height="260">'
+            modalText.style.display = 'flex'
+            modalText.style.justifyContent = 'center'
+        } 
+    } else if(window.matchMedia('(min-width: 1024px)').matches) {
         if (id === 'projetoForm') {
             modalTitle.innerHTML = 'Projeto tela de login'
             modalText.innerHTML = '<img src="img/projetoForm.png" height="400">'
