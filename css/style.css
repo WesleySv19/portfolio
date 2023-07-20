@@ -61,15 +61,13 @@ p {
 
 .linkedin {
     background-color: #0e76a8;
-    /* background-image: linear-gradient(to top, #0e76a8, #f5f5f5); */
     color: #f5f5f5;
     text-shadow: 3px 3px #000;
 }
 
 .git_hub {
     background-color: #1C1C1C;
-    /* background-image: linear-gradient(to top, #171515, #f5f5f5); */
-    color: #f5f5f5 ;
+    color: #f5f5f5;
     text-shadow: 1px 1px #f5f5f5;
     transition: 0.5s;
 }
@@ -104,7 +102,6 @@ p {
 }
 
 .container_photo {
-    /* border: 10px double #32CD32; */
     padding: 2em;
     border-radius: 50px;
 }
@@ -149,20 +146,16 @@ p {
 
 #main_container {
     display: flex;
-    /* border: 1px solid red; */
-    /* box-shadow: 10px 10px 20px #32CD32; */
 }
 
 
 .content_right {
     display: flex;
-    /* border: 1px solid green; */
     flex: 40;
     justify-content: center;
     height: 50vh;
     font-size: 3rem;
     text-align: center;
-    /* flex-direction: column; */
     
 }
 
@@ -170,7 +163,6 @@ p {
     padding: 1em;
     flex: 60;
     text-align: center;
-    /* border: 10px double #32CD32; */
     border-radius: 50px;
     color: #f5f5f5;
 }
@@ -222,7 +214,6 @@ p {
     border-top: 1px solid #32CD32;
     margin-top: 20em;
     width: 50%;
-    /* border: none; */
 }
 
 section {
@@ -232,7 +223,6 @@ section {
 
 .container_section {
     display: flex;
-    /* border: 1px solid blue; */
     justify-content: center;
     align-items: center;
     font-size: 4rem;
@@ -257,13 +247,11 @@ section {
 }
 
 .container_right_section {
-    /* border: 2px solid green; */
     flex: 50;
     text-align: center;
 }
 
 .container_left_section {
-    /* border: 2px solid purple; */
     flex: 50;
     text-align: center;
 }
@@ -376,8 +364,6 @@ h1 {
     border: double 20px #2F4F4F;
     border-radius: 50px;
     background-color: #1C1C1C;
-
-    /* border: 1px solid blue; */
     justify-content: center;
     text-align: center;
 }
@@ -499,9 +485,6 @@ form {
         font-size: 1rem;
     }
 
-    /* nav .secondary a{
-        font-size: 1rem;
-    } */
     nav .primary {
         display: none;
     }
@@ -693,7 +676,7 @@ form {
     #img_perfil {
         height: 280px;
     }
-
+        
     .contact_links a {
         font-size: 2rem;
     }
