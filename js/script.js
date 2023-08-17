@@ -1,9 +1,7 @@
 AOS.init();
-$(document).ready( () => {
-    $('#btn_clear').on('click', () => {
-        $('#name').val('')
-        $('#subject').val('')
-        $('#message').val('')
-    })
+
+const changeTheme = document.querySelector('#change-theme')
+
+changeTheme.addEventListener('click', function() {
+    document.body.classList.toggle('dark')
 })
-    

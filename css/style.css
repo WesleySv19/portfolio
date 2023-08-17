@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Raleway';
     font-size: 62.5%;
 }
 
 body {    
     overflow-x: hidden;
-    background-image: linear-gradient(90deg, #2F4F4F,#000000);
+    background-color: #f5f5f5;
+    transition: 0.4s;
 }
 
 aside {
@@ -27,17 +28,88 @@ a {
     font-size: 2rem;
 }
 
+i {
+    font-size: 2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.bi-sun {
+    display: none;
+}
+
 h2 {
     font-size: 3rem;
-    color: #f5f5f5;
+    color: #000;
     text-shadow: 2px 2px 10px #32CD32;
 }
 
-p {
-    color: #f5f5f5;
-    font-size: 2.5rem;
+.dark .bi-moon {
+    display: none;
 }
 
+.dark .bi-sun {
+    display: block;
+    color: #f5f5f5;
+}
+
+p {
+    color: #000;
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+
+.logo_name strong{
+    font-size: 2.5rem;
+    color: #000;
+}
+
+#change-theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.dark, 
+.dark header {
+    background-color: #263238;
+    color: #f5f5f5;
+}
+
+.dark .logo_name strong  {
+    color: #f5f5f5;
+}
+
+.dark .nav_links a {
+    color: #f5f5f5;
+}
+
+.dark h1 {
+    color: #f5f5f5;
+}
+.dark p {
+    color: #f5f5f5;
+}
+
+
+.dark h2 {
+    color: #f5f5f5;
+}
+
+.dark .nav_links a {
+    border-left: 10px groove #32CD32;
+    border-right: 10px groove #32CD32;
+} 
+
+.dark .nav_links a:hover {
+    border-left: 10px groove #f5f5f5;
+    border-right: 10px groove #f5f5f5;
+} 
+ 
 #menu_hamburguer {
     display: none;
 }
@@ -52,7 +124,6 @@ p {
     padding: 0.3em;
     color: #000;
     border-radius: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
     transition: 0.5s;
     cursor: pointer;
@@ -121,14 +192,14 @@ p {
     border-right: 10px groove #32CD32;
     border-radius: 20%;
     padding: 0.5em;
-    color: #f5f5f5;
+    color: #000;
     text-decoration: none;
     transition: 0.2s;
 }
 
 .nav_links a:hover {
-    border-left: 10px solid #f5f5f5;
-    border-right: 10px solid #f5f5f5;
+    border-left: 10px solid #000;
+    border-right: 10px solid #000;
     color: #32CD32;
     transition: 0.2s;
 }
@@ -272,7 +343,7 @@ section {
 h1 {
     text-align: center;
     margin-bottom: 3em;
-    color: #f5f5f5;
+    color: #000;
     font-size: 3.5rem;
 }
 
@@ -363,7 +434,6 @@ h1 {
     grid-template-columns: auto auto;
     border: double 20px #2F4F4F;
     border-radius: 50px;
-    background-color: #1C1C1C;
     justify-content: center;
     text-align: center;
 }
@@ -641,6 +711,7 @@ form {
 
     .logo_name strong{
         font-size: 2.5rem;
+        color: #000;
     }
 
     #anchor_img {
