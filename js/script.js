@@ -2,6 +2,8 @@ AOS.init();
 
 const changeTheme = document.querySelector('#change-theme')
 
-changeTheme.addEventListener('click', function() {
+const toggleTheme = () => {
     document.body.classList.toggle('dark')
-})
+}
+
+changeTheme.addEventListener('click', toggleTheme)
