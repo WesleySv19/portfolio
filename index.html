@@ -45,7 +45,7 @@
 
                 <aside>
                     <div class="btn-group dropleft">
-                        <img id="menu_icon" src="assets/img/menu.png" class="dropdown-toggle icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="">
+                        <img id="menu_icon" src="assets/img/menu.png" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="">
                         Dropleft
                         </button>
                         <div class="dropdown-menu">
@@ -64,7 +64,7 @@
 
                 <input type="checkbox" name="change-theme" id="change-theme">
                     <label for="change-theme">
-                        <i class="bi bi-sun"></i>
+                        <i class="bi bi-sun-fill"></i>
                         <i class="bi bi-moon"></i>
                     </label>
             </div>
@@ -84,10 +84,6 @@
                         <h1><span class="green_key">{</span>Desenvolvedor Web<span class="green_key">}</span></h1>
                         <p>Seja muito bem vindo(a) ao meu portfolio pessoal, aqui você verá minhas principais stacks, um pouco sobre mim, alguns projetos própios de um iniciante e também poderá me enviar uma mensagem. Este site foi feito com carinho baseado em todos os conhecimentos que venho aderindo com cursos e vídeos na internet, sempre na intenção de ir aprimorando e aprendendo para ficar cada vez mais profissional.
                         Abaixo estarão os links do meu GitHub e linkedin pessoal.</p>
-                        <div class="contact_links">
-                            <a class="linkedin btns_contact" href="">LINKEDIN</a>
-                            <a class="git_hub btns_contact" href="">GITHUB</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -96,7 +92,7 @@
             <hr class="separator">
         </div>
 
-        <section id="section_projects">
+        <section data-aos="fade-right" id="section_projects">
             <h1><span class="green_key align_center">{</span>Projetos<span class="green_key">}</span></h1>
             <div class="container_section">
 
@@ -110,7 +106,10 @@
                 <div data-aos="flip-right" class="container_left_section">
                     <h2>Calculadora</h2>
                     <p>Um dos meus primeiros projetos utilizando Javascript</p>
-                    <a href="https://github.com/WesleySv19/calculator" target="_blank"><i class="bi bi-braces project_icons"></i></a>
+                    <div class="see_project">
+                        <a href="https://github.com/WesleySv19/calculator" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                        <a href="https://github.com/WesleySv19/calculator/blob/main/README.md" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                    </div>
                 </div>
                 
             </div>
@@ -128,7 +127,10 @@
                 <div data-aos="flip-left" class="container_left_section">
                     <h2>To-do-List</h2>
                     <p>Projeto de lista de tarefas desenvolvido para treinamento de lógica e recursos para salvar dados pelo navegador do usuário.</p>
-                    <a href="https://github.com/WesleySv19/to-do-javascript" target="_blank"><i class="bi bi-braces project_icons"></i></a>
+                    <div class="see_project">
+                        <a href="https://github.com/WesleySv19/to-do-javascript" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                        <a href="https://github.com/WesleySv19/to-do-javascript/blob/master/README.md" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                    </div>
                 </div>
                 
             </div>
@@ -147,7 +149,10 @@
                 <div data-aos="flip-right" class="container_left_section">
                     <h2>Formulário</h2>
                     <p>Projeto pessoal na inteção de praticar bastante algumas propriedades do Css e uma pequena lógica de redirecionamento com Javascript.</p>
-                    <a href="https://github.com/WesleySv19/formScreen" target="_blank"><i class="bi bi-braces project_icons"></i></a>
+                    <div class="see_project">
+                        <a href="https://github.com/WesleySv19/formScreen" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                        <a href="https://github.com/WesleySv19/formScreen/blob/master/README.md" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -163,7 +168,10 @@
                 <div data-aos="flip-left" class="container_left_section">
                     <h2>Mata Mosquito</h2>
                     <p>Projeto desenvolvido em meu primeiro curso Web ministrado pelo professor Jorge Saint Ana.</p>
-                    <a href="https://github.com/WesleySv19/Project_mata_mosquito" target="_blank"><i class="bi bi-braces project_icons"></i></a>
+                    <div class="see_project">
+                        <a href="https://github.com/WesleySv19/Project_mata_mosquito" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                        <a href="https://github.com/WesleySv19/Project_mata_mosquito/blob/main/README.md" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -180,7 +188,10 @@
                 <div data-aos="flip-right" class="container_left_section">
                     <h2>Registro de Despesa</h2>
                     <p>Projeto onde foram abordados conceitos mais avançados de orientação a objeto ministrado pelo professor Jorge Saint Ana.</p>
-                    <a href="https://github.com/WesleySv19/personal-budget-js" target="_blank"><i class="bi bi-braces project_icons"></i></a>
+                    <div class="see_project">
+                        <a href="https://github.com/WesleySv19/personal-budget-js" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                        <a href="https://github.com/WesleySv19/personal-budget-js/blob/main/README.md" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -197,7 +208,10 @@
                 <div data-aos="flip-left" class="container_left_section">
                     <h2>Gerador de senhas</h2>
                     <p>Projeto desenvolvido para absorver alguns conceitos mais específicos da experiência do usuário com geradores de senhas.</p>
-                    <a href="https://github.com/WesleySv19/password-generator-js" target="_blank"><i class="bi bi-braces project_icons"></i></a>
+                    <div class="see_project">
+                        <a href="https://github.com/WesleySv19/password-generator-js" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                        <a href="https://github.com/WesleySv19/password-generator-js/blob/main/README.md" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -215,7 +229,10 @@
                 <div data-aos="flip-right" class="container_left_section">
                     <h2>Jogo da velha</h2>
                     <p>Projeto desenvolvido na inteção de fortalecer a lógica utilizando Javascript para entendimento de funções nativas.</p>
-                    <a href="https://github.com/WesleySv19/jogo-da-velha-javascript" target="_blank"><i class="bi bi-braces project_icons"></i></a>
+                    <div class="see_project">
+                        <a href="https://github.com/WesleySv19/jogo-da-velha-javascript" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                        <a href="https://github.com/WesleySv19/jogo-da-velha-javascript/blob/main/README.md" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -226,7 +243,7 @@
         </div>
 
 
-        <section id="container_father">
+        <section data-aos="fade-right" id="container_father">
             <h1><span class="green_key">{</span>Habilidades<span class="green_key">}</span></h1>
             <div class="container_sec">
                 <div data-aos="zoom-in" class="technologies">
@@ -306,31 +323,15 @@
             <hr class="separator">
         </div>
 
-        <footer id="container_footer">
+        <footer data-aos="fade-right" id="container_footer">
             <h1><span class="green_key">{</span>Contato<span class="green_key">}</span></h1>
-            <div class="container_contact">
-                <div class="container_form">
-                    <form id="formSubmission" action="enviar_email.php" method="POST">
-                        <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" required value="wesleyysilvaa1912@gmail.com">
-                        
-                        <label for="name">Nome:</label>
-                            <input type="text" id="name" name="name" required placeholder="Insira seu nome...">
-
-                        <label for="subject">Assunto:</label>
-                            <input type="text" id="subject" name="subject" required>
-                        
-                        <label for="message">Mensagem:</label>
-                            <textarea id="message" name="message" required></textarea>
-
-                        <div class="div_btns_form">
-                            <button type="button" id="btn_clear" class="btns_form">Limpar Campos</button>
-                            <button type="submit" id="btn_send" class="btns_form">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <nav class="container_contact">
+                <a href="mailto:wesleyysilvaa1912@gmail.com" target="_blank"><i class="bi bi-envelope icon"> E-mail</i></a>
+                <a href="https://www.linkedin.com/in/wesleysv19/" target="_blank"><i class="bi bi-linkedin icon"> Linkedin</i></a>
+                <a href="https://github.com/WesleySv19" target="_blank"><i class="bi bi-github icon"> Github</i></a>
+            </nav>
         </footer>
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/script.js"></script>
     </body>
