@@ -1,3 +1,9 @@
+:root {
+    --base-color-black: #333;
+    --base-color-green: #32CD32;
+    --base-color-white: #f5f5f5;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +14,7 @@
 
 body {    
     overflow-x: hidden;
-    background-color: #f5f5f5;
+    background-color: var(--base-color-white);
     transition: 0.4s;
 }
 
@@ -29,8 +35,8 @@ a {
 }
 
 i {
-    font-size: 2rem;
-    color: #000;
+    font-size: 2.5rem;
+    color: #333;
     cursor: pointer;
 }
 
@@ -40,8 +46,8 @@ i {
 
 h2 {
     font-size: 3rem;
-    color: #000;
-    text-shadow: 2px 2px 10px #32CD32;
+    color: var(--base-color-black);
+    text-shadow: 2px 2px 10px var(--base-color-green);
 }
 
 .dark .bi-moon {
@@ -50,18 +56,18 @@ h2 {
 
 .dark .bi-sun {
     display: block;
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 p {
-    color: #000;
+    color: var(--base-color-black);
     font-size: 2.5rem;
     transition: 0.3s;
 }
 
 .logo_name strong{
     font-size: 2.5rem;
-    color: #000;
+    color: var(--base-color-black);
 }
 
 #change-theme {
@@ -77,37 +83,37 @@ input[type="checkbox"] {
 .dark, 
 .dark header {
     background-color: #263238;
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 .dark .logo_name strong  {
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 .dark .nav_links a {
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 .dark h1 {
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 .dark p {
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 
 .dark h2 {
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 .dark .nav_links a {
-    border-left: 10px groove #32CD32;
-    border-right: 10px groove #32CD32;
+    border-left: 10px groove var(--base-color-green);
+    border-right: 10px groove var(--base-color-green);
 } 
 
 .dark .nav_links a:hover {
-    border-left: 10px groove #f5f5f5;
-    border-right: 10px groove #f5f5f5;
+    border-left: 10px groove var(--base-color-white);
+    border-right: 10px groove var(--base-color-white);
 } 
  
 #menu_hamburguer {
@@ -116,30 +122,32 @@ input[type="checkbox"] {
 
 .green_key {
     font-size: 3.5rem;
-    color: #32CD32;
+    color: var(--base-color-green);
 }
 
 
-.btns_contact {
+/* .btns_contact {
     padding: 0.3em;
-    color: #000;
+    color: #333;
     border-radius: 30px;
     font-size: 3rem;
     transition: 0.5s;
     cursor: pointer;
     letter-spacing: 2px;
-}
+} */
 
 .linkedin {
-    background-color: #0e76a8;
-    color: #f5f5f5;
-    text-shadow: 3px 3px #000;
+    /* background-color: #0e76a8; */
+    color: #0e76a8;
+    /* text-shadow: 3px 3px #333; */
 }
+
+.bi .bi-linkedin
 
 .git_hub {
     background-color: #1C1C1C;
-    color: #f5f5f5;
-    text-shadow: 1px 1px #f5f5f5;
+    color: var(--base-color-white);
+    text-shadow: 1px 1px var(--base-color-white);
     transition: 0.5s;
 }
 
@@ -152,7 +160,7 @@ input[type="checkbox"] {
 
 .git_hub:hover {
     color: #171515;
-    background: #f5f5f5;
+    background: var(--base-color-white);
     transition: 0.5s;
     text-shadow: 2px 2px #171515;
 }
@@ -169,7 +177,7 @@ input[type="checkbox"] {
     display: flex;
     font-size: 5rem;
     align-items: center;
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 .container_photo {
@@ -188,19 +196,19 @@ input[type="checkbox"] {
 
 .nav_links a {
     margin: 1em;
-    border-left: 10px groove #32CD32;
-    border-right: 10px groove #32CD32;
+    border-left: 10px groove var(--base-color-green);
+    border-right: 10px groove var(--base-color-green);
     border-radius: 20%;
     padding: 0.5em;
-    color: #000;
+    color: var(--base-color-black);
     text-decoration: none;
     transition: 0.2s;
 }
 
 .nav_links a:hover {
-    border-left: 10px solid #000;
-    border-right: 10px solid #000;
-    color: #32CD32;
+    border-left: 10px solid var(--base-color-black);
+    border-right: 10px solid var(--base-color-black);
+    color: var(--base-color-green);
     transition: 0.2s;
 }
 
@@ -235,7 +243,7 @@ input[type="checkbox"] {
     flex: 60;
     text-align: center;
     border-radius: 50px;
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 .content_left h1 {
@@ -248,14 +256,15 @@ input[type="checkbox"] {
 }
 
 #img_perfil {
-    background-color: #f5f5f5;
-    box-shadow: 10px 10px 20px #000, 20px 15px 30px #71b97c inset;
+    background-color: var(--base-color-white);
+    box-shadow: 10px 10px 20px #333, 20px 15px 30px #71b97c inset;
     border-radius: 50px 100px;
 }
 
 .text_content {
     width: 50vw;
-    box-shadow: 10px 10px 20px #32CD32;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 20px;
 }
 
@@ -282,7 +291,7 @@ input[type="checkbox"] {
 }
 
 .separator {
-    border-top: 1px solid #32CD32;
+    border-top: 1px solid var(--base-color-green);
     margin-top: 20em;
     width: 50%;
 }
@@ -298,7 +307,8 @@ section {
     align-items: center;
     font-size: 4rem;
     height: 50vh;
-    color: #f5f5f5;
+    color: var(--base-color-white);
+    border-bottom: 10px double var(--base-color-green);
 }
 
 .container_section p {
@@ -306,25 +316,36 @@ section {
     align-items: center;
 }
 
+.project_icons {
+    background-color: rgb(23, 21, 21, 0.8);
+    border-radius: 50px;
+    color: var(--base-color-green);
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
 .img_section {
     height: 30rem;
     border-radius: 20px;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .img_section:hover{
-    box-shadow: 10px 10px 20px #32CD32;
+    box-shadow: 10px 10px 20px var(--base-color-green);
     transition: 0.2s;
 }
 
 .container_right_section {
     flex: 50;
     text-align: center;
+    padding: 5rem;
 }
 
 .container_left_section {
     flex: 50;
     text-align: center;
+    padding: 5rem;
 }
 
 
@@ -336,14 +357,14 @@ section {
     display: flex;
     padding: 1em;
     font-size: 3.5rem;
-    color: #f5f5f5;
+    color: var(--base-color-white);
     
 }
 
 h1 {
     text-align: center;
     margin-bottom: 3em;
-    color: #000;
+    color: var(--base-color-black);
     font-size: 3.5rem;
 }
 
@@ -358,6 +379,8 @@ h1 {
     transition: 0.3s;
     opacity: 0.8;
     margin-top: 30em;
+    border-bottom: 10px double var(--base-color-green);
+
 }
 
 .technologies p {
@@ -387,7 +410,7 @@ h1 {
    border-radius: 50px;
    padding: 2em;
    background: linear-gradient(45deg, #2F4F4F, #1C1C1C);
-   color: #000;
+   color: var(--base-color-black);
    border: double 50px #1C1C1C;
 }
 
@@ -399,7 +422,7 @@ h1 {
     box-shadow: 10px 10px 20px #1C1C1C;
     outline: none;
     background-color: #1C1C1C;
-    color: #f5f5f5;
+    color: var(--base-color-white);
 }
 
 #formSubmission textarea {
@@ -409,13 +432,13 @@ h1 {
     box-shadow: 10px 10px 10px #1C1C1C;
     outline: none;
     background-color: #1C1C1C;
-    color: #f5f5f5;
+    color: var(--base-color-white);
     padding: 0.5em;
 }
   
 #formSubmission label {
     font-size: 2.5rem;
-    color: #f5f5f5;
+    color: var(--base-color-white);
     margin: 0.5em;
 }
 
@@ -431,16 +454,14 @@ h1 {
 
 .container_sec {
     display: grid;
-    grid-template-columns: auto auto;
-    border: double 20px #2F4F4F;
-    border-radius: 50px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     text-align: center;
 }
 
 .container_contact {
     font-size: 4rem;
-    color: #f5f5f5;
+    color: var(--base-color-white);
     display: flex;
     justify-content: center;
     height: 90vh;
@@ -480,7 +501,7 @@ form {
 
 
 #btn_send {
-    background-color:#32CD32;
+    background-color: var(--base-color-green);
     color: #f5f5f5;
     outline: none;
 }
@@ -658,7 +679,7 @@ form {
         border-radius: 0;
         padding: 1em;
         background: linear-gradient(45deg, #2F4F4F, #1C1C1C);
-        color: #000;
+        color: #333;
         border: double 20px #1C1C1C;
     }
 
@@ -711,7 +732,7 @@ form {
 
     .logo_name strong{
         font-size: 2.5rem;
-        color: #000;
+        color: #333;
     }
 
     #anchor_img {
@@ -805,7 +826,7 @@ form {
         border-radius: 0;
         padding: 1em;
         background: linear-gradient(45deg, #2F4F4F, #1C1C1C);
-        color: #000;
+        color: #333;
         border: double 20px #1C1C1C;
     }
 
