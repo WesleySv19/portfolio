@@ -1,0 +1,104 @@
+.dark, 
+.dark header {
+    background-color: #263238;
+    color: var(--base-color-white);
+}
+
+.dark .bi-moon {
+    display: none;
+}
+
+.dark .bi-sun-fill {
+    display: block;
+    color: var(--base-color-white);
+}
+
+.dark .logo_name strong  {
+    color: var(--base-color-white);
+}
+
+.dark #img_profile {
+    box-shadow: 5px 5px 20px var(--base-color-green);
+}
+
+.dark .nav_links a {
+    color: var(--base-color-white);
+}
+
+.dark h1 {
+    color: var(--base-color-white);
+}
+.dark p {
+    color: var(--base-color-white);
+}
+
+
+.dark h2 {
+    color: var(--base-color-white);
+}
+
+.dark .nav_links a {
+    border-left: 10px groove var(--base-color-green);
+    border-right: 10px groove var(--base-color-green);
+} 
+
+.dark .nav_links a:hover {
+    border-left: 10px groove var(--base-color-white);
+    border-right: 10px groove var(--base-color-white);
+}
+
+.dark .cv {
+    background-color: var(--base-color-black);
+    box-shadow: 2px 3px 5px var(--base-color-green);
+}  
+
+.dark .cv i {
+    color: var(--base-color-green);
+}
+
+.dark .contact {
+    background-color: var(--base-color-black);
+    color: var(--base-color-white);
+    border: 3px solid var(--base-color-green);
+}
+
+.dark .contact:hover {
+    color: var(--base-color-green);
+}
+
+.dark .icon_project {
+    color: var(--base-color-white);
+}
+
+.dark .btn_close {
+    background-color: var(--base-color-black);
+    color: var(--base-color-white);
+}
+
+.dark .icon_project:hover {
+    background-color: var(--base-color-green);
+    color: var(--base-color-black);
+}
+
+.dark .modal-content {
+    box-shadow: 10px 5px 20px var(--base-color-green);
+    color: var(--base-color-white);
+    background-color: #263238;
+    border: 2px solid var(--base-color-green);
+}
+
+.modal-title {
+    border-bottom: 2px solid var(--base-color-green);
+}
+
+.dark .btn_close:hover {
+    background-color: var(--base-color-black);
+    color: var(--base-color-green);
+    transition: 0.3s;
+    cursor: pointer;
+    border: 2px solid var(--base-color-green);
+}
+
+.dark .closeX {
+    color: var(--base-color-white);
+}
