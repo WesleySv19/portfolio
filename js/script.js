@@ -28,7 +28,7 @@ const openModal = () => {
                     break
                 case 3: modaltitle.innerHTML = 'TYPESCRIPT', modalBody.innerHTML = 'TypeScript é uma extensão do JavaScript que adiciona tipagem estática e recursos avançados de orientação a objetos. Ele é compilado para JavaScript e oferece ferramentas para desenvolvimento mais robusto e escalável.'
                     break
-                case 4: modaltitle.innerHTML = 'BOOTSRTAP', modalBody.innerHTML = 'Bootstrap é um framework front-end que fornece um conjunto de estilos pré-construídos e componentes reutilizáveis. Ele agiliza o desenvolvimento de interfaces responsivas e atraentes para web.'
+                case 4: modaltitle.innerHTML = 'BOOTSTRAP', modalBody.innerHTML = 'Bootstrap é um framework front-end que fornece um conjunto de estilos pré-construídos e componentes reutilizáveis. Ele agiliza o desenvolvimento de interfaces responsivas e atraentes para web.'
                     break
                 case 5: modaltitle.innerHTML = 'JQUERY', modalBody.innerHTML = 'jQuery é uma biblioteca JavaScript popular que simplifica tarefas comuns de manipulação de documentos HTML, animações, gerenciamento de eventos e interações com o servidor.'
                     break
