@@ -21,7 +21,7 @@
     box-shadow: 5px 5px 20px var(--base-color-green);
 }
 
-.dark .nav_links a {
+.dark .nav_bar a {
     color: var(--base-color-white);
 }
 
@@ -37,14 +37,22 @@
     color: var(--base-color-white);
 }
 
-.dark .nav_links a {
+.dark .nav_bar a {
     border-left: 10px groove var(--base-color-green);
     border-right: 10px groove var(--base-color-green);
 } 
 
-.dark .nav_links a:hover {
+.dark .nav_bar a:hover {
     border-left: 10px groove var(--base-color-white);
     border-right: 10px groove var(--base-color-white);
+}
+
+.dark .icon_function {
+    color: var(--base-color-white);
+}
+
+.dark .icon_function:hover {
+    background-color: var(--base-color-green);
 }
 
 .dark .cv {
