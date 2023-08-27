@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/dark.css">
         <link rel="stylesheet" href="./assets/fonts/fonts.css">
-        <title>Wesley-da-Silva</title>
+        <title>Portfólio // Wesley da Silva</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
@@ -21,22 +21,37 @@
                 
         <header>
             <div id="content_header">
+                <div class="mobile_menu_icon">
+                    <i class="bi bi-list icon_function"></i>
+                </div>
+
                 <div class="logo_name">
                     <strong class="animate__animated animate__heartBeat"><span class="green_key"><</span>Wesley da Silva<span class="green_key">/></span></strong>
                 </div>
 
-                <nav>
-                    <ul id="nav_links" class="nav_links primary">
-                        <li><a href="#section_projects">Projetos</a></li>
-                        <li><a href="#container_father">Habilidades</a></li>
-                        <li><a href="#container_footer">Contato</a></li>
+                <nav class="nav">
+                    <ul class="nav_bar">
+                        <li class="nav_item"><a href="#section_projects">Projetos</a></li>
+                        <li class="nav_item"><a href="#container_section">Habilidades</a></li>
+                        <li class="nav_item"><a href="#container_footer">Contato</a></li>
                     </ul>
                 </nav>
-                <input type="checkbox" name="change-theme" id="change-theme">
+
+                <div class="change">
+                    <input type="checkbox" name="change-theme" id="change-theme">
                     <label for="change-theme">
                         <i class="bi bi-sun-fill"></i>
                         <i class="bi bi-moon"></i>
                     </label>
+                </div>
+
+                <nav class="mobile_menu">
+                    <ul class="menu_list">
+                        <li class="nav_item"><a href="#">Projetos</a></li>
+                        <li class="nav_item"><a href="#">Habilidades</a></li>
+                        <li class="nav_item"><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
@@ -45,7 +60,7 @@
                 <div class="content_right">
                     <div class="container_photo">
                         <a href="https://github.com/WesleySv19" target="_blank">
-                            <img id="img_profile" src="assets/img/profile.jpg" height="400" alt="">
+                            <img id="img_profile" src="assets/img/profile.jpg" alt="">
                         </a>
                     </div>
                 </div>
@@ -68,142 +83,139 @@
 
         <section data-aos="fade-right" id="section_projects">
             <h1><span class="green_key align_center">{</span>Projetos<span class="green_key">}</span></h1>
-            <div class="container_section">
-
-                <div class="container_right_section">
-                    <a href="https://wesleysv19.github.io/calculator" target="_blank"><img data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" class="img_section" src="assets/img/calculator.png" alt="">
-                    </a> 
-                </div>
-
-                <div data-aos="flip-right" class="container_left_section">
-                    <h2>Calculadora</h2>
-                    <p>Um dos meus primeiros projetos utilizando Javascript</p>
-                    <div class="see_project">
-                        <a href="https://github.com/WesleySv19/calculator" target="_blank"><i class="bi bi-code icon_project"></i></a>
-                        <a href="https://wesleysv19.github.io/calculator" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                <div class="container_section">
+                    <div class="container_right_section">
+                        <a href="https://wesleysv19.github.io/calculator" target="_blank"><img data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" class="img_section" src="assets/img/calculator.png" alt="">
+                        </a> 
+                    </div>
+    
+                    <div data-aos="flip-right" class="container_left_section">
+                        <h2>Calculadora</h2>
+                        <p>Um dos meus primeiros projetos utilizando Javascript</p>
+                        <div class="see_project">
+                            <a href="https://github.com/WesleySv19/calculator" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                            <a href="https://wesleysv19.github.io/calculator" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="reverse container_section">
-                <div class="container_right_section">
-                    <a href="https://wesleysv19.github.io/to-do-javascript/" target="_blank"><img data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" class="img_section" src="assets/img/project-to-do.png" alt="">
-                    </a>
-                </div>
-
-                <div data-aos="flip-left" class="container_left_section">
-                    <h2>To-do-List</h2>
-                    <p>Projeto de lista de tarefas desenvolvido para treinamento de lógica e recursos para salvar dados pelo navegador do usuário.</p>
-                    <div class="see_project">
-                        <a href="https://github.com/WesleySv19/to-do-javascript" target="_blank"><i class="bi bi-code icon_project"></i></a>
-                        <a href="https://wesleysv19.github.io/to-do-javascript" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+        
+                <div class="reverse container_section">
+                    <div class="container_right_section">
+                        <a href="https://wesleysv19.github.io/to-do-javascript/" target="_blank"><img data-aos="fade-left"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" class="img_section" src="assets/img/project-to-do.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div data-aos="flip-left" class="container_left_section">
+                        <h2>To-do-List</h2>
+                        <p>Projeto de lista de tarefas desenvolvido para treinamento de lógica e recursos para salvar dados pelo navegador do usuário.</p>
+                        <div class="see_project">
+                            <a href="https://github.com/WesleySv19/to-do-javascript" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                            <a href="https://wesleysv19.github.io/to-do-javascript" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="container_section">
-                <div class="container_right_section">
-                    <a href="https://wesleysv19.github.io/formScreen/" target="_blank"><img data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" class="img_section" src="assets/img/projetoForm.png" alt="">
-                    </a>
-                </div>
-
-                <div data-aos="flip-right" class="container_left_section">
-                    <h2>Formulário</h2>
-                    <p>Projeto pessoal na inteção de praticar bastante algumas propriedades do Css e uma pequena lógica de redirecionamento com Javascript.</p>
-                    <div class="see_project">
-                        <a href="https://github.com/WesleySv19/formScreen" target="_blank"><i class="bi bi-code icon_project"></i></a>
-                        <a href="https://wesleysv19.github.io/formScreen/" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+    
+                <div class="container_section">
+                    <div class="container_right_section">
+                        <a href="https://wesleysv19.github.io/formScreen/" target="_blank"><img data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" class="img_section" src="assets/img/projetoForm.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div data-aos="flip-right" class="container_left_section">
+                        <h2>Formulário</h2>
+                        <p>Projeto pessoal na inteção de praticar bastante algumas propriedades do Css e uma pequena lógica de redirecionamento com Javascript.</p>
+                        <div class="see_project">
+                            <a href="https://github.com/WesleySv19/formScreen" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                            <a href="https://wesleysv19.github.io/formScreen/" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="reverse container_section">
-                <div class="container_right_section">
-                    <a href="https://wesleysv19.github.io/Project_mata_mosquito" target="_blank"><img data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" class="img_section" src="assets/img/projetoMataMosquito.png" alt="">
-                    </a>
-                </div>
-
-                <div data-aos="flip-left" class="container_left_section">
-                    <h2>Mata Mosquito</h2>
-                    <p>Projeto desenvolvido em meu primeiro curso Web ministrado pelo professor Jorge Saint Ana.</p>
-                    <div class="see_project">
-                        <a href="https://github.com/WesleySv19/Project_mata_mosquito" target="_blank"><i class="bi bi-code icon_project"></i></a>
-                        <a href="https://wesleysv19.github.io/Project_mata_mosquito" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                <div class="reverse container_section">
+                    <div class="container_right_section">
+                        <a href="https://wesleysv19.github.io/Project_mata_mosquito" target="_blank"><img data-aos="fade-left"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" class="img_section" src="assets/img/projetoMataMosquito.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div data-aos="flip-left" class="container_left_section">
+                        <h2>Mata Mosquito</h2>
+                        <p>Projeto desenvolvido em meu primeiro curso Web ministrado pelo professor Jorge Saint Ana.</p>
+                        <div class="see_project">
+                            <a href="https://github.com/WesleySv19/Project_mata_mosquito" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                            <a href="https://wesleysv19.github.io/Project_mata_mosquito" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container_section">
-                <div class="container_right_section">
-                    <a href="https://wesleysv19.github.io/personal-budget-js" target="_blank">
-                        <img data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" class="img_section" src="assets/img/projetoRegistroDeDespesa.png" alt="">
-                    </a>
-                </div>
-
-                <div data-aos="flip-right" class="container_left_section">
-                    <h2>Registro de Despesa</h2>
-                    <p>Projeto onde foram abordados conceitos mais avançados de orientação a objeto ministrado pelo professor Jorge Saint Ana.</p>
-                    <div class="see_project">
-                        <a href="https://github.com/WesleySv19/personal-budget-js" target="_blank"><i class="bi bi-code icon_project"></i></a>
-                        <a href="https://wesleysv19.github.io/personal-budget-js" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                <div class="container_section">
+                    <div class="container_right_section">
+                        <a href="https://wesleysv19.github.io/personal-budget-js" target="_blank">
+                            <img data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" class="img_section" src="assets/img/projetoRegistroDeDespesa.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div data-aos="flip-right" class="container_left_section">
+                        <h2>Registro de Despesa</h2>
+                        <p>Projeto onde foram abordados conceitos mais avançados de orientação a objeto ministrado pelo professor Jorge Saint Ana.</p>
+                        <div class="see_project">
+                            <a href="https://github.com/WesleySv19/personal-budget-js" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                            <a href="https://wesleysv19.github.io/personal-budget-js" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="reverse container_section">
-                <div class="container_right_section">
-                    <a href="https://wesleysv19.github.io/password-generator-js" target="_blank"><img data-aos="fade-left"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" class="img_section" src="assets/img/passwordGenerator.png" alt="">
-                    </a>
-                </div>
-
-                <div data-aos="flip-left" class="container_left_section">
-                    <h2>Gerador de senhas</h2>
-                    <p>Projeto desenvolvido para absorver alguns conceitos mais específicos da experiência do usuário com geradores de senhas.</p>
-                    <div class="see_project">
-                        <a href="https://github.com/WesleySv19/password-generator-js" target="_blank"><i class="bi bi-code icon_project"></i></a>
-                        <a href="https://wesleysv19.github.io/password-generator-js" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                <div class="reverse container_section">
+                    <div class="container_right_section">
+                        <a href="https://wesleysv19.github.io/password-generator-js" target="_blank"><img data-aos="fade-left"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" class="img_section" src="assets/img/passwordGenerator.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div data-aos="flip-left" class="container_left_section">
+                        <h2>Gerador de senhas</h2>
+                        <p>Projeto desenvolvido para absorver alguns conceitos mais específicos da experiência do usuário com geradores de senhas.</p>
+                        <div class="see_project">
+                            <a href="https://github.com/WesleySv19/password-generator-js" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                            <a href="https://wesleysv19.github.io/password-generator-js" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-
-            <div class="container_section">
-
-                <div class="container_right_section">
-                    <a href="https://wesleysv19.github.io/jogo-da-velha-javascript" target="_blank"><img data-aos="fade-right"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-in-sine" class="img_section" src="assets/img/jogoDaVelha.png" alt="">
-                    </a>
-                </div>
-
-                <div data-aos="flip-right" class="container_left_section">
-                    <h2>Jogo da velha</h2>
-                    <p>Projeto desenvolvido na inteção de fortalecer a lógica utilizando Javascript para entendimento de funções nativas.</p>
-                    <div class="see_project">
-                        <a href="https://github.com/WesleySv19/jogo-da-velha-javascript" target="_blank"><i class="bi bi-code icon_project"></i></a>
-                        <a href="https://wesleysv19.github.io/jogo-da-velha-javascript" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                <div class="container_section">
+                    <div class="container_right_section">
+                        <a href="https://wesleysv19.github.io/jogo-da-velha-javascript" target="_blank"><img data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine" class="img_section" src="assets/img/jogoDaVelha.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div data-aos="flip-right" class="container_left_section">
+                        <h2>Jogo da velha</h2>
+                        <p>Projeto desenvolvido na inteção de fortalecer a lógica utilizando Javascript para entendimento de funções nativas.</p>
+                        <div class="see_project">
+                            <a href="https://github.com/WesleySv19/jogo-da-velha-javascript" target="_blank"><i class="bi bi-code icon_project"></i></a>
+                            <a href="https://wesleysv19.github.io/jogo-da-velha-javascript" target="_blank"><i class="bi bi-eye icon_project"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <div class="line">
             <hr class="separator">
         </div>
 
-        <section data-aos="fade-right" id="container_father">
+        <section data-aos="fade-right" id="container_section">
             <h1><span class="green_key">{</span>Habilidades<span class="green_key">}</span></h1>
             <div class="container_grid">
                 <div class="container_tec">
