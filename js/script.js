@@ -46,3 +46,16 @@ const openModal = () => {
 }
 
 openModal()
+
+
+const menuShow = () => {
+    const icon = document.querySelector('.icon_function')
+    const menuMobile = document.querySelector('.mobile_menu')
+
+    icon.addEventListener('click', function() {
+        menuMobile.classList.toggle('open')
+    })
+
+}
+
+menuShow()
