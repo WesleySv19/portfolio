@@ -38,13 +38,12 @@
 }
 
 .dark .nav_bar a {
-    border-left: 10px groove var(--base-color-green);
-    border-right: 10px groove var(--base-color-green);
+    border-right: 5px double var(--base-color-green);
+    border-left: 5px double var(--base-color-green);
 } 
 
 .dark .nav_bar a:hover {
-    border-left: 10px groove var(--base-color-white);
-    border-right: 10px groove var(--base-color-white);
+    color: var(--base-color-green);
 }
 
 .dark .icon_function {
