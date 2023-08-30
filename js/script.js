@@ -1,20 +1,33 @@
-AOS.init();
+AOS.init()
 
 const changeTheme = document.querySelector('#change-theme')
 
 const toggleTheme = () => {
     document.body.classList.toggle('dark')
+    if (document.body.classList.contains('dark')) {
+        localStorage.setItem('dark', '1')
+    } else {
+        localStorage.removeItem('dark')
+    }
 }
+
+const loadTheme = () => {
+    const darkMode = localStorage.getItem('dark')
+    if (darkMode) {
+        document.body.classList.add('dark')
+    }
+}
+
+loadTheme()
 
 changeTheme.addEventListener('click', toggleTheme)
 
-
-const openModalTech = document.querySelectorAll('.container_tec')
-const modal = new bootstrap.Modal(document.querySelector('#modal'));
-const modaltitle = document.querySelector('.modal-title')
-const modalBody = document.querySelector('.modal-body')
-
 const openModal = () => {
+    const openModalTech = document.querySelectorAll('.container_tec')
+    const modal = new bootstrap.Modal(document.querySelector('#modal'))
+    const modaltitle = document.querySelector('.modal-title')
+    const modalBody = document.querySelector('.modal-body')
+
     openModalTech.forEach((tech, index) => {
         tech.addEventListener('click', function() {
             modal.show()
@@ -52,10 +65,27 @@ const menuShow = () => {
     const icon = document.querySelector('.icon_function')
     const menuMobile = document.querySelector('.mobile_menu')
 
-    icon.addEventListener('click', function() {
+    icon.addEventListener('click', () => {
         menuMobile.classList.toggle('open')
     })
 
 }
 
 menuShow()
+
+const appendIcons = () => {
+    const divs = document.querySelectorAll('.project_div')
+    const iconClasses = ['bi bi-filetype-html', 'bi bi-filetype-css', 'bi bi-filetype-js']
+
+    divs.forEach((div) => {
+        iconClasses.forEach((iconClass) => {
+            const icon = document.createElement('i')
+            icon.className = iconClass
+            div.appendChild(icon)
+        })
+    })
+}
+
+appendIcons()
+
+
