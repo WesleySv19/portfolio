@@ -229,23 +229,27 @@ footer {
 
 .see_project {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 2%;
     margin-top: 3rem;
+    color: var(--base-color-black);
 }
 
-.icon_project {
-    padding: 1.2rem;
-    color: var(--base-color-black);
-    border: 1px solid var(--base-color-black);
+.appendBtns {
+    padding: 0.9rem;
+    font-size: 1.5rem;
+    cursor: pointer;
     border-radius: 20px;
-    font-size: 3rem; 
+    border: 3px solid var(--base-color-black);
+    outline: none;
+    background-color: var(--base-color-white);
+    color: var(--base-color-black);
     transition: 0.3s;
 }
 
-.icon_project:hover {
+.appendBtns:hover {
     background-color: var(--base-color-black);
-    color: var(--base-color-white);
+    color: var(--base-color-green);
     transition: 0.3s;
 }
 
