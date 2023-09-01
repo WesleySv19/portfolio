@@ -73,18 +73,19 @@
     color: var(--base-color-green);
 }
 
-.dark .icon_project {
+.dark .appendBtns {
+    background-color: var(--base-color-black);
     color: var(--base-color-white);
+    border: 2px solid var(--base-color-green);
+}
+
+.dark .appendBtns:hover {
+    color: var(--base-color-green);
 }
 
 .dark .btn_close {
     background-color: var(--base-color-black);
     color: var(--base-color-white);
-}
-
-.dark .icon_project:hover {
-    background-color: var(--base-color-green);
-    color: var(--base-color-black);
 }
 
 .dark .modal-content {
