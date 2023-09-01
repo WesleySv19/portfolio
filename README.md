@@ -1,6 +1,6 @@
-# Meu Portfolio
+# Meu Portfólio
 
-Bem-vindo ao meu portfolio! Este é um espaço onde compartilho alguns dos projetos em que trabalhei para demonstrar minhas habilidades e conhecimentos como desenvolvedor.
+Bem-vindo ao meu portfólio! Este é um espaço onde compartilho alguns dos projetos em que trabalhei para demonstrar minhas habilidades e conhecimentos como desenvolvedor.
 
 ## Sobre Mim
 
