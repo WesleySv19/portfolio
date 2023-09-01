@@ -29,29 +29,39 @@ const openModal = () => {
     const modalBody = document.querySelector('.modal-body')
 
     openModalTech.forEach((tech, index) => {
-        tech.addEventListener('click', function() {
+        tech.addEventListener('click', () => {
             modal.show()
 
             switch (index) {
-                case 0: modaltitle.innerHTML = 'HTML (HyperText Markup Language)', modalBody.innerHTML = 'HTML é a linguagem de marcação usada para criar a estrutura e o conteúdo de páginas da web. Ela define os elementos e sua organização, permitindo que os navegadores interpretem e exibam o conteúdo da página.'
+                case 0: modaltitle.innerHTML = 'HTML (HyperText Markup Language)', 
+                modalBody.innerHTML = 'HTML é a linguagem de marcação usada para criar a estrutura e o conteúdo de páginas da web. Ela define os elementos e sua organização, permitindo que os navegadores interpretem e exibam o conteúdo da página.'
                     break
-                case 1: modaltitle.innerHTML = 'CSS (Cascading Style Sheets)', modalBody.innerHTML = 'CSS é uma linguagem de estilo usada para controlar a aparência e o layout dos elementos HTML em uma página da web. Ele define cores, fontes, posicionamento e outros aspectos visuais.'
+                case 1: modaltitle.innerHTML = 'CSS (Cascading Style Sheets)', 
+                modalBody.innerHTML = 'CSS é uma linguagem de estilo usada para controlar a aparência e o layout dos elementos HTML em uma página da web. Ele define cores, fontes, posicionamento e outros aspectos visuais.'
                     break
-                case 2: modaltitle.innerHTML = 'JAVASCRIPT', modalBody.innerHTML = 'JavaScript é uma linguagem de programação usada principalmente no desenvolvimento web. Ela permite a criação de interatividade dinâmica em páginas da web, controlando comportamentos do usuário e manipulando elementos da página.'
+                case 2: modaltitle.innerHTML = 'JAVASCRIPT', 
+                modalBody.innerHTML = 'JavaScript é uma linguagem de programação usada principalmente no desenvolvimento web. Ela permite a criação de interatividade dinâmica em páginas da web, controlando comportamentos do usuário e manipulando elementos da página.'
                     break
-                case 3: modaltitle.innerHTML = 'TYPESCRIPT', modalBody.innerHTML = 'TypeScript é uma extensão do JavaScript que adiciona tipagem estática e recursos avançados de orientação a objetos. Ele é compilado para JavaScript e oferece ferramentas para desenvolvimento mais robusto e escalável.'
+                case 3: modaltitle.innerHTML = 'TYPESCRIPT', 
+                modalBody.innerHTML = 'TypeScript é uma extensão do JavaScript que adiciona tipagem estática e recursos avançados de orientação a objetos. Ele é compilado para JavaScript e oferece ferramentas para desenvolvimento mais robusto e escalável.'
                     break
-                case 4: modaltitle.innerHTML = 'BOOTSTRAP', modalBody.innerHTML = 'Bootstrap é um framework front-end que fornece um conjunto de estilos pré-construídos e componentes reutilizáveis. Ele agiliza o desenvolvimento de interfaces responsivas e atraentes para web.'
+                case 4: modaltitle.innerHTML = 'BOOTSTRAP', 
+                modalBody.innerHTML = 'Bootstrap é um framework front-end que fornece um conjunto de estilos pré-construídos e componentes reutilizáveis. Ele agiliza o desenvolvimento de interfaces responsivas e atraentes para web.'
                     break
-                case 5: modaltitle.innerHTML = 'JQUERY', modalBody.innerHTML = 'jQuery é uma biblioteca JavaScript popular que simplifica tarefas comuns de manipulação de documentos HTML, animações, gerenciamento de eventos e interações com o servidor.'
+                case 5: modaltitle.innerHTML = 'JQUERY', 
+                modalBody.innerHTML = 'jQuery é uma biblioteca JavaScript popular que simplifica tarefas comuns de manipulação de documentos HTML, animações, gerenciamento de eventos e interações com o servidor.'
                     break
-                case 6: modaltitle.innerHTML = 'REACT.JS', modalBody.innerHTML = 'React.js é uma biblioteca JavaScript de código aberto mantida pelo Facebook. Ela é usada para construir interfaces de usuário dinâmicas e reativas, dividindo a interface em componentes reutilizáveis.'
+                case 6: modaltitle.innerHTML = 'REACT.JS', 
+                modalBody.innerHTML = 'React.js é uma biblioteca JavaScript de código aberto mantida pelo Facebook. Ela é usada para construir interfaces de usuário dinâmicas e reativas, dividindo a interface em componentes reutilizáveis.'
                     break
-                case 7: modaltitle.innerHTML = 'NODE.JS', modalBody.innerHTML = 'Node.js é um ambiente de tempo de execução JavaScript que permite a execução de código JavaScript fora de um navegador. Ele é amplamente usado para criar aplicativos de rede escaláveis e em tempo real.'
+                case 7: modaltitle.innerHTML = 'NODE.JS', 
+                modalBody.innerHTML = 'Node.js é um ambiente de tempo de execução JavaScript que permite a execução de código JavaScript fora de um navegador. Ele é amplamente usado para criar aplicativos de rede escaláveis e em tempo real.'
                     break
-                case 8: modaltitle.innerHTML = 'GIT', modalBody.innerHTML = 'Git é um sistema de controle de versão distribuído usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele facilita a colaboração em equipe e o gerenciamento de versões.'
+                case 8: modaltitle.innerHTML = 'GIT', 
+                modalBody.innerHTML = 'Git é um sistema de controle de versão distribuído usado para rastrear mudanças no código-fonte durante o desenvolvimento de software. Ele facilita a colaboração em equipe e o gerenciamento de versões.'
                     break
-                case 9: modaltitle.innerHTML = 'SQL (Structured Query Language)', modalBody.innerHTML = 'SQL é uma linguagem de consulta usada para gerenciar e manipular bancos de dados relacionais. Ela permite a criação, consulta, atualização e exclusão de dados em um banco de dados.'
+                case 9: modaltitle.innerHTML = 'SQL (Structured Query Language)', 
+                modalBody.innerHTML = 'SQL é uma linguagem de consulta usada para gerenciar e manipular bancos de dados relacionais. Ela permite a criação, consulta, atualização e exclusão de dados em um banco de dados.'
                     break
             }
         })
@@ -88,4 +98,53 @@ const appendIcons = () => {
 
 appendIcons()
 
+
+const projectBtns = () => {
+    const createButton = (text, link) => {
+        const button = document.createElement('button')
+        button.classList = 'appendBtns'
+
+        const anchor = document.createElement('a')
+        anchor.href = link
+        anchor.target = '_blank'
+        button.appendChild(document.createTextNode(text))
+
+        anchor.appendChild(button)
+        return anchor
+    }
+
+    const appendBtns = () => {
+        const divs = document.querySelectorAll('.see_project')
+
+        divs.forEach((div, index) => {
+
+            switch (index) {
+                case 0: div.appendChild(createButton('Acessar repositório', 'https://github.com/WesleySv19/calculator')), 
+                div.appendChild(createButton('Acessar projeto', 'https://wesleysv19.github.io/calculator'))
+                    break
+                case 1: div.appendChild(createButton('Acessar repositório', 'https://github.com/WesleySv19/to-do-javascript')), 
+                div.appendChild(createButton('Acessar projeto', 'https://wesleysv19.github.io/to-do-javascript'))
+                    break
+                case 2: div.appendChild(createButton('Acessar repositório', 'https://github.com/WesleySv19/formScreen')), 
+                div.appendChild(createButton('Acessar projeto', 'https://wesleysv19.github.io/formScreen'))
+                    break
+                case 3: div.appendChild(createButton('Acessar repositório', 'https://github.com/WesleySv19/Project_mata_mosquito')), 
+                div.appendChild(createButton('Acessar projeto', 'https://wesleysv19.github.io/Project_mata_mosquito'))
+                    break
+                case 4: div.appendChild(createButton('Acessar repositório', 'https://github.com/WesleySv19/personal-budget-js')), 
+                div.appendChild(createButton('Acessar projeto', 'https://wesleysv19.github.io/personal-budget-js'))
+                    break
+                case 5: div.appendChild(createButton('Acessar repositório', 'https://github.com/WesleySv19/password-generator-js')), 
+                div.appendChild(createButton('Acessar projeto', 'https://wesleysv19.github.io/password-generator-js'))
+                    break
+                case 6: div.appendChild(createButton('Acessar repositório', 'https://github.com/WesleySv19/jogo-da-velha-javascript')), 
+                div.appendChild(createButton('Acessar projeto', 'https://wesleysv19.github.io/jogo-da-velha-javascript'))
+                    break
+                
+            }
+        })
+    }
+    appendBtns()
+}
+projectBtns()
 
